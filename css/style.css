@@ -65,6 +65,13 @@ li {
   margin-top: 8px;
 }
 
+.learn-more {
+  color: #2e80ce;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
 /* ====================== HEADER  ======================= */
 .header {
   min-height: 110vh;
@@ -284,4 +291,69 @@ li {
 
 .service__action--btn {
   margin-top: 70px;
+}
+
+/* ====================== WORKS  ======================= */
+.works {
+  background-color: #f6fbff;
+  padding: 100px 0;
+}
+
+.work__heading--desc {
+  width: 468px;
+  margin-bottom: 86px;
+}
+
+.work__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work__item {
+  width: 338px;
+  border: 16px solid #eaf6ff;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+.work__item--active,
+.work__item:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px);
+}
+
+.work__item--content {
+  padding: 42px;
+}
+
+.work__item--title {
+  padding: 18px 0 28px;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.work__item--desc {
+  padding-bottom: 18px;
+  color: #575f66;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.work__item--img {
+  width: 60px;
+  height: 60px;
+}
+
+.work__item--learn-more {
+  position: relative;
+}
+
+.work__item--learn-more:hover::after {
+  content: ">";
+  position: absolute;
+  right: -15px;
+  top: -3px;
 }
