@@ -11,7 +11,7 @@ body {
   font-family: Sora, sans-serif;
 }
 
-/* ====================== common  ======================= */
+/* ====================== COMMON  ======================= */
 a {
   text-decoration: none;
 }
@@ -42,13 +42,36 @@ li {
   opacity: 0.9;
 }
 
-/* ====================== header  ======================= */
+.h2-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.h3-title {
+  color: #10375c;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.p-desc {
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+/* ====================== HEADER  ======================= */
 .header {
   min-height: 110vh;
   background-color: #10375c;
 }
 
-/* ----------- header -------------- */
+/* ----------- header top -------------- */
 .header__top {
   display: flex;
   justify-content: space-between;
@@ -134,7 +157,7 @@ li {
   min-width: 104px;
 }
 
-/* ====================== hero  ======================= */
+/* ====================== HERO  ======================= */
 .hero {
   display: flex;
   justify-content: center;
@@ -195,4 +218,70 @@ li {
 .hero__img--small {
   width: 210px;
   height: 410px;
+}
+
+/* ====================== SERVICE  ======================= */
+.service {
+  padding: 170px 0;
+}
+
+.service__header {
+  text-align: center;
+}
+
+.service__desc {
+  width: 468px;
+  margin: 18px auto 70px;
+}
+
+.service__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+  object-position: 0 -25px;
+  border-radius: 12px;
+}
+
+.service__list {
+  width: 470px;
+  margin-top: 40px;
+}
+
+.service__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff6fd;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  flex-shrink: 0;
+  transition: 0.25s;
+}
+
+.service__item {
+  display: flex;
+  gap: 19px;
+  padding: 21px;
+  transition: 0.25s;
+}
+
+.service__item:hover {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service__item:hover .service__icon {
+  color: #fff;
+  background-color: #2e80ce;
+}
+
+.service__action--btn {
+  margin-top: 70px;
 }
