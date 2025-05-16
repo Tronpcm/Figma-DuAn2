@@ -3,7 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Figma-DuAn2</title>
   </head>
-  <body></body>
+  <body style="height: 2000px">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <!-- header top -->
+        <section class="header__top">
+          <!-- logo -->
+          <div class="header__logo">
+            <a href="#!">
+              <img src="./img/logo.svg" alt="Shine smile" class="header__logo--img" />
+            </a>
+            <div class="header__title">
+              <span>Shine</span>
+              <br />
+              <span>smile</span>
+            </div>
+          </div>
+
+          <!-- nav -->
+          <nav class="header__nav">
+            <a href="#!">
+              <li class="header__item header__item--active">Home</li>
+            </a>
+            <a href="#!">
+              <li class="header__item">Services</li>
+            </a>
+            <a href="#!">
+              <li class="header__item">About</li>
+            </a>
+            <a href="#!">
+              <li class="header__item">doctors</li>
+            </a>
+          </nav>
+
+          <!-- button -->
+          <div class="action">
+            <a href="#!" class="btn header__btn--lognin">Logn In</a>
+            <a href="#!" class="btn header__btn--signup">Sign Up</a>
+          </div>
+        </section>
+
+        <!-- header body -->
+        <section class="header__body"></section>
+      </div>
+    </header>
+  </body>
 </html>
